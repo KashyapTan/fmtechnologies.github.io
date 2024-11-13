@@ -1,0 +1,58 @@
+:root{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.page-1{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+.navbar{
+    width: 100vw;
+    height: 3rem;
+    background-color: lightcoral;
+}
+.company-name-text{
+    width: 100vw;
+    height: calc(100vh - 3rem);
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+.page-2{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+.wallet{
+    background-color: lightpink;
+    height: 100vh;
+    width: calc(100vw / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.phone-case{
+    background-color: lightblue;
+    height: 100vh;
+    width: calc(100vw / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.key-chain{
+    background-color: lightyellow;
+    height: 100vh;
+    width: calc(100vw / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
