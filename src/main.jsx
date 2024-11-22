@@ -1,9 +1,26 @@
-import { StrictMode } from 'react'
+import React from 'react'
 import { createRoot } from 'react-dom/client'
 import Home from './pages/Home.jsx'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import About from './pages/About.jsx'
+import Contact from './pages/Contact.jsx'
+import ShoppingCart from './pages/ShoppingCart.jsx'
+import Wallet from './pages/Wallet.jsx'
+import PhoneCase from './pages/PhoneCase.jsx'
+import KeyChain from './pages/KeyChain.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <Home/>
-  </StrictMode>,
+  <React.StrictMode>
+    <BrowserRouter basename='/fmtechnologies/'>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/cart" element={<ShoppingCart />} />
+        <Route path="/wallet" element={<Wallet />} />
+        <Route path="/phonecase" element={<PhoneCase />} />
+        <Route path="/keychain" element={<KeyChain />} />
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>
 )
