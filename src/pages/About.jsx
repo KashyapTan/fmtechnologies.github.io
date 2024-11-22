@@ -1,11 +1,16 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+import '../projectCss/About.css'
+
+
 
 function About() {
   return (
     <>
       <Navbar />
-      ABOUT!
+      <div className='about-page-container'>
+
+      </div>
     </>
   )
 }

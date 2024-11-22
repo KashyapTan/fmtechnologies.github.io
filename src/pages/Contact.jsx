@@ -1,11 +1,14 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+import '../projectCss/Contact.css'
 
 function Contact() {
   return (
     <div>
         <Navbar />
-        CONTACT!
+        <div className='contact-page-container'>
+
+        </div>
     </div>
   )
 }

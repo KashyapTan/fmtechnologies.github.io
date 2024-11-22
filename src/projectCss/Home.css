@@ -21,6 +21,7 @@ body{
     display: flex;
     flex-direction: row;
     z-index: 999;
+    justify-content: space-between;
 }
 .about-button{
     font-size: 1.2rem;
@@ -48,32 +49,32 @@ body{
 }
 
 .logo-space{
-    width: 5vw;
-    height: 100%;
-    /* background-color: rosybrown; */
+    width: 3rem;
+    height: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .fm-tech-logo{
-    width: 50%;
-    height: 100%;
+    width: 3rem;
+    height: 3rem;
 }
 .fm-tech-logo:hover{
     cursor: pointer;
 }
 .blank-space{
-    width: 82vw;
+    width: 80vw;
     height: 100%;
     /* background-color: lightcoral; */
 }
 .navigation-options{
-    width: 13vw;
+    width: fit-content;
     display: flex;
     flex-direction: row;
     gap: 25px;
     align-items: center;
     color: white;
+    margin-right: 10px;
 }
 .company-name-text{
     width: 100vw;
@@ -96,15 +97,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 255, 255, 0.3);
-    
+    background-color: rgb(255, 255, 255, 0.5);
     border: 1px solid white;
     border-radius: 8px;
     padding: 15px;
     font-size: 3rem;
+    box-shadow: 0 .0625rem .1875rem 0 rgba(0,0,0,.5),0 .25rem .5rem .1875rem rgba(0,0,0,.5);
 }
 .discover-button:hover{
-    background-color: rgb(255, 255, 255, 0.1);
+    background-color: rgb(255, 255, 255, 0.3);
     color: white;
 }
 .page-2{
@@ -112,7 +113,54 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: row;
-    background-image: linear-gradient(#060d1b, #009cbb);
+    background-color: black;
+    justify-content: center;
+}
+.page-2-bg{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+    /* background-image: linear-gradient(#060d1b, #009cbb); */
+    background-color: #171a21;
+    opacity: 0.8;
+}
+.page-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    
+}
+.product-container{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 10;
+}
+.company-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 10vh;
+    background-color: rgba(255,255,255,0.02);
+    z-index: 12;
+}
+.company-info-text{
+    font-size: 2rem;
+    color: white;
+}
+.company-contact-text{
+    font-size: 1.2rem;
+    color: white;
 }
 .wallet-section{
     /* background-color: lightpink; */
@@ -129,6 +177,7 @@ body{
     height: 15vw;
     background-color: lightblue;
     border-radius: 50%;
+    box-shadow: 0 .0625rem .1875rem 0 rgba(0,0,0,.5),0 .25rem .5rem .1875rem rgba(0,0,0,.5);
 }
 .wallet-image:hover{
     cursor: pointer;
@@ -148,6 +197,7 @@ body{
     height: 15vw;
     background-color: lightblue;   
     border-radius: 50%;
+    box-shadow: 0 .0625rem .1875rem 0 rgba(0,0,0,.5),0 .25rem .5rem .1875rem rgba(0,0,0,.5);
 }
 .phone-case-image:hover{
     cursor: pointer;
@@ -167,6 +217,7 @@ body{
     height: 15vw;
     background-color: lightblue;
     border-radius: 50%;
+    box-shadow: 0 .0625rem .1875rem 0 rgba(0,0,0,.5),0 .25rem .5rem .1875rem rgba(0,0,0,.5);    
 }
 .key-chain-image:hover{
     cursor: pointer;
@@ -198,4 +249,13 @@ body{
     z-index: 10;
     width: 100vw;
     height: 100vh;
+    object-fit: cover;
+}
+.bg-image-2{
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    transform: scaleY(-1);
+    filter: blur(3px);
+    object-fit: cover;
 }

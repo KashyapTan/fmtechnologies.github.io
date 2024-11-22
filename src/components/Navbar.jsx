@@ -45,7 +45,7 @@ function Navbar() {
                     <img className='fm-tech-logo' src={logoDark} alt="" />
                 </div>
 
-                <div className='blank-space'></div>
+                {/* <div className='blank-space'></div> */}
 
                 <div className='navigation-options'>
                     <div className="about-button" onClick={navigateToAbout}>
