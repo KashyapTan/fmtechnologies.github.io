@@ -6,4 +6,40 @@ body{
     background-color: black;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-page-content{
+    width: 60vw;
+    height: 100vh;
+    /* background-color: lightblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.about-page-image{
+    /* background-color: lightcoral; */
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-page-text{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.about-page-heading{
+    color: white;
+    font-size: 5rem;
+}
+.about-page-description{
+    color: white;
+    font-size: 2rem;
 }

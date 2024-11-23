@@ -1,5 +1,5 @@
 import '../projectCss/Home.css'
-import bgimage from '../images/fm-tech-4k.png'
+import bgimage from '../images/fm-tech-bg.png'
 import Navbar from '../components/Navbar'
 import { useNavigate } from 'react-router-dom'
 import { scroller } from 'react-scroll'
