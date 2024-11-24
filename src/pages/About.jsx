@@ -20,7 +20,7 @@ function About() {
           <img src={fmtechLogo} alt="" />
         </div>
       </div>
-      <Footer />
+      <Footer textColor="#000933"/>
     </>
   )
 }

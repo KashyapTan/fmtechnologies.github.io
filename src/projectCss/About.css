@@ -3,7 +3,7 @@ body{
     padding: 0;
 }
 .about-page-container{
-    background-color: black;
+    background-color: #ccd5ff;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -36,10 +36,10 @@ body{
     gap: 2rem;
 }
 .about-page-heading{
-    color: white;
+    color: #000933;
     font-size: 5rem;
 }
 .about-page-description{
-    color: white;
+    color: #000933;
     font-size: 2rem;
 }

@@ -3,7 +3,91 @@ body{
     padding: 0;
 }
 .contact-page-container{
-    background-color: black;
+    background-color: lightblue;
     width: 100vw;
     height: 100vh;
+    display: flex;
+}
+
+.contact-section{
+    width: 60vw;
+    height: 100vh;
+    /* background-color: lightblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.image-section{
+    width: 40vw;
+    height: 100vh;
+    /* background-color: lightgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bulding-image-area{
+    width: 80%;
+    height: 100%;
+    /* background-color: black; */
+}
+
+form{
+    /* background: #1B1C24; */
+    /* background: lightseagreen; */
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 70%;
+    margin: 0;
+    padding: 0;
+}
+
+form h1{
+    margin: 0;
+    padding: 0;
+    /* color: white; */
+    font-size: 5em;
+}
+
+form input, form textarea{
+    position: relative;
+    border: 0;
+    margin:  10px 0;
+    padding: 20px;
+    outline: none;
+    background:none;
+    font-size: 1rem;
+    border-bottom: 1px solid black;
+    width: 90%;
+}
+
+form input#name, form input#email, form textarea#message{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+form input::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+
+}
+
+form textarea::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+form button{
+    padding: 15px;
+    color: white;
+    background-color: lightgoldenrodyellow;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 30%;
+    position: relative;
+    margin-top: 20px;
 }
