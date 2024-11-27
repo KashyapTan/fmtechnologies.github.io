@@ -126,11 +126,53 @@ html::-webkit-scrollbar-track{
     padding: 15px;
     font-size: 3rem;
     box-shadow: 0 .0625rem .1875rem 0 rgba(0,0,0,.5),0 .25rem .5rem .1875rem rgba(0,0,0,.5);
+    position: absolute;
+    /* background-color: black; */
+    /* position: relative;
+    border-radius: 8px; */
 }
 .discover-button:hover{
     background-color: rgb(255, 255, 255, 0.3);
     color: white;
 }
+/* @property --angle {
+    syntax: '<angle>';
+    inherits: true;
+    initial-value: 0deg;
+}
+.discover-button::after,
+.discover-button::before{
+    font-size: 3rem;
+    box-shadow: 0 .0625rem .1875rem 0 rgba(0,0,0,.5),0 .25rem .5rem .1875rem rgba(0,0,0,.5);
+    content: 'DISCOVER';
+    background-color: transparent;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    border-radius: inherit;
+    --angle: 0deg;
+    border-image: conic-gradient(from var(--angle), #ea2dd8, #001bfb, #ea2dd8);
+    animation: autoRotate 2s linear infinite;
+    border-radius: 8px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    padding: 5px;
+    border-width: 5px;
+    border-style: solid;
+
+}
+.discover-button::after{
+    filter: blur(60px);
+}
+@keyframes autoRotate{
+    to{
+        --angle: 360deg;
+    }
+} */
+
+
 .page-2{
     width: 100vw;
     height: 100vh;
