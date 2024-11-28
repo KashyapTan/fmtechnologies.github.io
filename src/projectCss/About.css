@@ -1,9 +1,19 @@
+@property --about-page-text-color{
+    syntax: '<color>';
+    inherits: false;
+    initial-value: black;
+}
+@property --about-page-background-color{
+    syntax: '<color>';
+    inherits: false;
+    initial-value: white;
+}
 body{
     margin: 0;
     padding: 0;
 }
 .about-page-container{
-    background-color: #ccd5ff;
+    background-color: var(--about-page-background-color);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -36,10 +46,10 @@ body{
     gap: 2rem;
 }
 .about-page-heading{
-    color: #000933;
+    color: var(--about-page-text-color);
     font-size: 5rem;
 }
 .about-page-description{
-    color: #000933;
+    color: var(--about-page-text-color);
     font-size: 2rem;
 }

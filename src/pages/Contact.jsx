@@ -1,12 +1,14 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
+import NavbarDark from '../components/NavbarDark'
 import '../projectCss/Contact.css'
 import Footer from '../components/Footer'
+import fmtechLogo from '../images/fm-tech-logo-dark.webp'
+
 
 function Contact() {
   return (
     <div>
-        <Navbar />
+        <NavbarDark />
         <div className='contact-page-container'>
           <div className="contact-section">
             <form id="contact-form">
@@ -19,7 +21,7 @@ function Contact() {
           </div>
           <div className="image-section">
             <div className="bulding-image-area">
-
+              <img src={fmtechLogo} alt="" />
             </div>
           </div>
         </div>

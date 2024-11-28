@@ -1,9 +1,20 @@
+@property --contact-page-text-color{
+    syntax: '<color>';
+    inherits: false;
+    initial-value: black;
+}
+@property --contact-page-background-color{
+    syntax: '<color>';
+    inherits: false;
+    initial-value: white;
+}
+
 body{
     margin: 0;
     padding: 0;
 }
 .contact-page-container{
-    background-color: lightblue;
+    background-color: var(--contact-page-background-color);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -27,9 +38,11 @@ body{
     justify-content: center;
 }
 .bulding-image-area{
-    width: 80%;
+    width: 100%;
     height: 100%;
-    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 form{
@@ -41,13 +54,14 @@ form{
     width: 70%;
     margin: 0;
     padding: 0;
+    gap: 3rem;
 }
 
 form h1{
     margin: 0;
     padding: 0;
-    /* color: white; */
-    font-size: 5em;
+    color: var(--contact-page-text-color);
+    font-size: 6em;
 }
 
 form input, form textarea{
@@ -57,32 +71,32 @@ form input, form textarea{
     padding: 20px;
     outline: none;
     background:none;
-    font-size: 1rem;
-    border-bottom: 1px solid black;
+    font-size: 2rem;
+    border-bottom: 1px solid var(--contact-page-text-color);
     width: 90%;
 }
 
 form input#name, form input#email, form textarea#message{
     font-family: 'Montserrat', sans-serif;
-    color: black;
+    color: var(--contact-page-text-color);
 }
 
 form input::placeholder{
     font-family: 'Montserrat', sans-serif;
-    color: black;
+    color: var(--contact-page-text-color);
 
 }
 
 form textarea::placeholder{
     font-family: 'Montserrat', sans-serif;
-    color: black;
+    color: var(--contact-page-text-color);
 }
 
 form button{
     padding: 15px;
     color: white;
-    background-color: lightgoldenrodyellow;
-    font-size: 1.1rem;
+    background-color: var(--contact-page-text-color);
+    font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
     border: 0;
     outline: none;

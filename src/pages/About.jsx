@@ -1,14 +1,12 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
+import NavbarDark from '../components/NavbarDark'
 import '../projectCss/About.css'
-import fmtechLogo from '../images/fm-tech-logo-light.webp'
+import fmtechLogo from '../images/fm-tech-logo-dark.webp'
 import Footer from '../components/Footer'
-
 
 function About() {
   return (
     <>
-      <Navbar />
+      <NavbarDark />
       <div className='about-page-container'>
         <div className="about-page-content">
           <div className='about-page-text'>
@@ -19,8 +17,10 @@ function About() {
         <div className="about-page-image">
           <img src={fmtechLogo} alt="" />
         </div>
+        <div className="spotlight"></div>
+        <div className="flashlight"></div>
       </div>
-      <Footer textColor="#000933"/>
+      <Footer textColor="white"/>
     </>
   )
 }

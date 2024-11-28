@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react'
 
-import logoDark from '../images/fm-tech-logo-light.webp'
+import logoDark from '../images/fm-tech-logo-dark.webp'
 import CartIcon from '../components/CartIcon'
 import { useNavigate } from 'react-router-dom'
-import '../projectCss/Navbar.css'
+import '../projectCss/NavbarDark.css'
 
-function Navbar() {
+function NavbarDark() {
     const [cartCount, setCartCount] = useState(0)
     const navigate = useNavigate()
 
@@ -41,22 +41,22 @@ function Navbar() {
 
   return (
     <>
-        <div className="navbar">
-                <div className='logo-space' onClick={navigateToHome}>
-                    <img className='fm-tech-logo' src={logoDark} alt="" />
+        <div className="navbar-dark">
+                <div className='logo-space-dark' onClick={navigateToHome}>
+                    <img className='fm-tech-logo-dark' src={logoDark} alt="" />
                 </div>
 
                 {/* <div className='blank-space'></div> */}
 
-                <div className='navigation-options'>
-                    <div className="about-button" onClick={navigateToAbout}>
+                <div className='navigation-options-dark'>
+                    <div className="about-button-dark" onClick={navigateToAbout}>
                         About
                     </div>
-                    <div className="contact-button" onClick={navigateToContact}>
+                    <div className="contact-button-dark" onClick={navigateToContact}>
                         Contact
                     </div>
-                    <div className='cart-icon' onClick={navigateToShoppingCart}>
-                        <CartIcon shoppingCartCount={cartCount} cartColor={'white'}/>
+                    <div className='cart-icon-dark' onClick={navigateToShoppingCart}>
+                        <CartIcon shoppingCartCount={cartCount} cartColor={'black'}/>
                     </div>
                 </div>
             </div>
@@ -64,4 +64,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default NavbarDark

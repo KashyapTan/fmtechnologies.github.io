@@ -1,0 +1,81 @@
+.navbar{
+    width: 100vw;
+    height: 3rem;
+    background-color: rgba(255,255,255,0.05);
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    z-index: 999;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.logo-space{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    /* position: fixed; */
+    /* position: absolute; */
+}
+.fm-tech-logo{
+    width: 3rem;
+    height: 3rem;
+}
+.fm-tech-logo:hover{
+    cursor: pointer;
+}
+.navigation-options{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+    color: white;
+}
+.about-button{
+    font-size: 1.2rem;
+}
+.about-button:hover{
+    color: #0094B2;
+    cursor: pointer;
+}
+.contact-button{
+    font-size: 1.2rem;
+}
+.contact-button:hover{
+    color: #0094B2;
+    cursor: pointer;
+}
+.cart-icon{
+    width: fit-content;
+    height: 80%;
+    margin-right: 10px;
+}
+/* .cart-icon svg{
+    stroke: white;
+    stroke-width: 2%;
+} */
+.cart-icon:hover{
+    cursor: pointer;
+    width: 22%;
+    height: 75%;
+
+}
+
+
+.fm-tech-logo{
+    width: 3rem;
+    height: 3rem;
+}
+.fm-tech-logo:hover{
+    cursor: pointer;
+}
+.blank-space{
+    width: 80vw;
+    height: 100%;
+    /* background-color: lightcoral; */
+}
