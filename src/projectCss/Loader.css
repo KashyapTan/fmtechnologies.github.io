@@ -1,0 +1,84 @@
+:root{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.loader-container{
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    /* z-index: 1000; */
+}
+.blinder-container{
+    top: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    /* background-color: lightcoral; */
+}
+.blinder{
+    background: blue;
+    height: 100vh;
+    width: calc(100vw / 5);
+    /* flex: 1; */
+    transform-origin: top;
+}
+.main-circle{
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-layer{
+    width: 20vw;
+    height: 20vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 15rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    border: 1px solid black;
+}
+.logo-layer img{
+    width: 125%;
+    height: 125%;
+    object-fit: cover;
+}
+.mask-layer{
+    border: 1px solid black;
+    width: 20vw;
+    height: 20vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 3;
+    animation: drainFill 3s infinite alternate; /* Smoothly alternates between forward and reverse */
+    clip-path: circle(50% at 50% 50%);
+  } 
+  
+  @keyframes drainFill {
+    0% {
+      clip-path: inset(0% 0% 0% 0%); /* Fully white at start */
+    }
+    100% {
+      clip-path: inset(100% 0% 0% 0%); /* Fully transparent, logo revealed */
+    }
+  }

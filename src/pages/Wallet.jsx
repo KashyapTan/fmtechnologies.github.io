@@ -81,7 +81,7 @@ function Wallet() {
               <div className='wallet-specifications-section-2'>
                 <div className="wallet-specifications-heading-2">SPECIFICATIONS</div>
                 <div className='wallet-specifications-material'>MATERIAL</div>
-                <div className="wallet-material-description">Leather with platnium accents</div>
+                <div className="wallet-material-description">Leather with platinum accents</div>
                 <div className='wallet-specifications-thickness'>THICKNESS</div>
                 <div className="wallet-thickness-description">10 mm</div>
                 <div className='wallet-specifications-dimensions'>DIMENSION</div>

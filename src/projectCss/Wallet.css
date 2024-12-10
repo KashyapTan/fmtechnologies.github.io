@@ -151,6 +151,7 @@ body{
     border-radius: 8px;
     cursor: pointer;
     color: black;
+    border: 3px solid transparent;
 }
 .buy-now-buttton{
     background-color: var(--wallet-page-text-color);
@@ -163,6 +164,10 @@ body{
     border-radius: 8px;
     cursor: pointer;
     color: black;
+    border: 3px solid transparent;
+}
+.add-to-cart-button:hover, .buy-now-buttton:hover{
+    border: 3px solid grey;
 }
 .wallet-specifications-section{
     /* background-color: lightcoral; */
@@ -188,17 +193,17 @@ body{
 }
 
 .wallet-specifications-heading-1, .wallet-specifications-heading-2{
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 .feature-1, .feature-2, .feature-3, .feature-4{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 .wallet-specifications-material, .wallet-specifications-thickness, .wallet-specifications-dimensions, .wallet-specifications-weight{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: white;
 }
 .wallet-material-description, .wallet-thickness-description, .wallet-dimension-description, .wallet-weight-description{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: rgb(190, 190, 190);
 }
 
