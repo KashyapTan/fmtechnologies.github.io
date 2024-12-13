@@ -11,8 +11,8 @@ body{
     top: 0;
     height: 100vh;
     width: 100%;
-    position: absolute;
-    /* z-index: 1000; */
+    position: fixed;
+    z-index: 1000;
 }
 .blinder-container{
     top: 0;
@@ -24,7 +24,7 @@ body{
     /* background-color: lightcoral; */
 }
 .blinder{
-    background: blue;
+    background: black;
     height: 100vh;
     width: calc(100vw / 5);
     /* flex: 1; */
@@ -70,7 +70,7 @@ body{
     border-radius: 50%;
     position: absolute;
     z-index: 3;
-    animation: drainFill 3s infinite alternate; /* Smoothly alternates between forward and reverse */
+    animation: drainFill 1s infinite alternate; /* Smoothly alternates between forward and reverse */
     clip-path: circle(50% at 50% 50%);
   } 
   
